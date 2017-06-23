@@ -28,7 +28,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src="demo.gif" alt="walkthrough" height=500/> <img src="optionalsDemo.gif" alt="optionalsWalkthrough" height=500/>
+<img src="demo.gif" alt="walkthrough" height=500/>
 
 ## Notes
 
