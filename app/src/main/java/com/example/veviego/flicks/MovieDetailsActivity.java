@@ -82,8 +82,8 @@ public class MovieDetailsActivity extends AppCompatActivity {
         Glide.with(context)
                 .load(getIntent().getStringExtra(isPortrait ? "Backdrop url" : "Poster url"))
                 .bitmapTransform(new RoundedCornersTransformation(context, 35, 0))
-                .placeholder(isPortrait ? R.drawable.flicks_backdrop_placeholder : R.drawable.flicks_movie_placeholder)
-                .error(isPortrait ? R.drawable.flicks_backdrop_placeholder : R.drawable.flicks_movie_placeholder)
+                .placeholder(isPortrait ? R.drawable.flicks_backdrop_placeholder : R.drawable.flicks_backdrop_placeholder)
+                .error(isPortrait ? R.drawable.flicks_backdrop_placeholder : R.drawable.flicks_backdrop_placeholder)
                 .into(ivTrailer);
     }
 
