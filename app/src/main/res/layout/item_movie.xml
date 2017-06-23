@@ -2,7 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_margin="5dp"
-    android:layout_width="match_parent" android:layout_height="wrap_content">
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@color/backgroundColor">
 
     <ImageView
         android:id="@+id/ivPosterImage"
@@ -22,8 +23,11 @@
         android:layout_toRightOf="@+id/ivPosterImage"
         android:text="Movie Title"
         android:textAppearance="@android:style/TextAppearance.Large"
+        android:textColor="@color/titleColor"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:maxLines="1"
+        android:ellipsize="end"/>
 
     <TextView
         android:id="@+id/tvOverview"
@@ -32,7 +36,10 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_below="@+id/tvTitle"
+        android:textColor="@color/overviewColor"
         android:layout_toRightOf="@+id/ivPosterImage"
-        android:text="Movie overview and synopsis" />
+        android:text="Movie overview and synopsis"
+        android:maxLines="@string/max_lines_portrait_overview"
+        android:ellipsize="end"/>
 
 </RelativeLayout>

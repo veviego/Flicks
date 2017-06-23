@@ -6,14 +6,13 @@
 
     <ImageView
         android:id="@+id/ivBackdropImage"
-        android:layout_width="480dp"
+        android:layout_width="400dp"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:adjustViewBounds="true"
         android:scaleType="fitXY"
-        android:layout_marginRight="5dp"
         app:srcCompat="@drawable/flicks_backdrop_placeholder" />
 
     <TextView
@@ -24,16 +23,22 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/ivBackdropImage"
+        android:textColor="@color/titleColor"
         android:text="Movie Title"
-        android:textAppearance="@android:style/TextAppearance.Medium" />
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:maxLines="@string/max_lines_title"
+        android:ellipsize="end"/>
 
     <TextView
         android:id="@+id/tvOverview"
         android:layout_width="wrap_content"
+        android:textColor="@color/overviewColor"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_below="@+id/tvTitle"
         android:layout_toRightOf="@+id/ivBackdropImage"
-        android:text="TextView" />
+        android:text="TextView"
+        android:maxLines="@string/max_lines_landscape_overview"
+        android:ellipsize="end"/>
 </RelativeLayout>
