@@ -15,8 +15,8 @@ public class MovieTrailerActivity extends YouTubeBaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_movie_trailer);
 
-        // temporary test video id -- TODO replace with movie trailer video id
-        final String videoID = "tKodtNFpzBA";
+        // temporary test video id
+        final String videoID = getIntent().getStringExtra("Youtube Key");
 
         // resolve the player view from the layout
         YouTubePlayerView playerView = (YouTubePlayerView) findViewById(R.id.player);

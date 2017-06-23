@@ -39,4 +39,13 @@
         android:layout_below="@+id/tvTitle"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/ivTrailer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvOverview"
+        app:srcCompat="@drawable/flicks_backdrop_placeholder" />
 </RelativeLayout>

@@ -49,6 +49,7 @@ public class MovieListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_movie_list);
+
         // initialize client
         client = new AsyncHttpClient();
         // initialize the list of movies
@@ -99,7 +100,7 @@ public class MovieListActivity extends AppCompatActivity {
         });
     }
 
-    // get the configuration frmo the API
+    // get the configuration from the API
     private void getConfiguration() {
         // create the url
         String url = API_BASE_URL + "/configuration";
