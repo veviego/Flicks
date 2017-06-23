@@ -35,4 +35,5 @@
         android:layout_below="@+id/tvTitle"
         android:layout_toRightOf="@+id/ivPosterImage"
         android:text="Movie overview and synopsis" />
+
 </RelativeLayout>
