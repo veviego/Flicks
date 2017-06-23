@@ -132,6 +132,8 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
 
                 // add backdrop url
                 intent.putExtra("Backdrop url", config.getImageUrl(config.getBackdropSize(), movie.getBackdropPath()));
+                // add backdrop url
+                intent.putExtra("Poster url", config.getImageUrl(config.getPosterSize(), movie.getPosterPath()));
 
                 // show the activity
                 context.startActivity(intent);

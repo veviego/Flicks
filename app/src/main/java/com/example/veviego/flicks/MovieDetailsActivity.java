@@ -2,6 +2,7 @@ package com.example.veviego.flicks;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -74,12 +75,15 @@ public class MovieDetailsActivity extends AppCompatActivity {
         // get the trailer
         getTrailer();
 
+        // determine the current orientation
+        boolean isPortrait = context.getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT;
+
         //load backdrop image using glide
         Glide.with(context)
-                .load(getIntent().getStringExtra("Backdrop url"))
+                .load(getIntent().getStringExtra(isPortrait ? "Backdrop url" : "Poster url"))
                 .bitmapTransform(new RoundedCornersTransformation(context, 35, 0))
-                .placeholder(R.drawable.flicks_backdrop_placeholder)
-                .error(R.drawable.flicks_backdrop_placeholder)
+                .placeholder(isPortrait ? R.drawable.flicks_backdrop_placeholder : R.drawable.flicks_movie_placeholder)
+                .error(isPortrait ? R.drawable.flicks_backdrop_placeholder : R.drawable.flicks_movie_placeholder)
                 .into(ivTrailer);
     }
 
