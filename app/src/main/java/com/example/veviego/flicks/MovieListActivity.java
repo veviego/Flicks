@@ -21,6 +21,8 @@ import java.util.ArrayList;
 
 import cz.msebera.android.httpclient.Header;
 
+
+
 public class MovieListActivity extends AppCompatActivity {
 
     // constants
@@ -130,6 +132,9 @@ public class MovieListActivity extends AppCompatActivity {
             }
         });
     }
+
+
+
 
     // handle errors, log and alert user
     private void logError(String message, Throwable error, boolean alertUser) {
