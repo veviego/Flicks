@@ -17,7 +17,6 @@ public class Movie {
     String posterPath; // only the path
     String backdropPath; // only the path
     Double voteAverage;
-    Integer videoId;
 
     public String getTitle() {
         return title;
@@ -39,10 +38,6 @@ public class Movie {
         return voteAverage;
     }
 
-    public Integer getVideoId() {
-        return videoId;
-    }
-
     // no-arg, empty constructor required for Parceler
     public Movie() {}
 
@@ -54,7 +49,6 @@ public class Movie {
         posterPath = object.getString("poster_path");
         backdropPath = object.getString("backdrop_path");
         voteAverage = object.getDouble("vote_average");
-        videoId = object.getInt("id");
 
     }
 }

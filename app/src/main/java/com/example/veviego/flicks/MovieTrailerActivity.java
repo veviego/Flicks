@@ -34,7 +34,7 @@ public class MovieTrailerActivity extends YouTubeBaseActivity {
             public void onInitializationFailure(YouTubePlayer.Provider provider,
                                                YouTubeInitializationResult youTubeInitializationResult) {
                 // log the error
-                Log.e("MovieTrailerActivity", "Error initiializing YouTube player");
+                Log.e("MovieTrailerActivity", "Error initializing YouTube player");
             }
         });
     }
