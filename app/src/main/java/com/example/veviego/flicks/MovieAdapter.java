@@ -67,7 +67,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
         //load image using glide
         Glide.with(context)
                 .load(imageUrl)
-                .bitmapTransform(new RoundedCornersTransformation(context, 35, 0))
+                .bitmapTransform(new RoundedCornersTransformation(context, 15, 0))
                 .placeholder(R.drawable.flicks_backdrop_placeholder)
                 .error(R.drawable.flicks_backdrop_placeholder)
                 .into(holder.ivPosterImage);
@@ -91,7 +91,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
 
         public ViewHolder(View itemView) {
             super(itemView);
-            // lookup view objets by id
+            // lookup view objects by id
             ivPosterImage = (ImageView) itemView.findViewById(R.id.ivPosterImage);
             tvOverview = (TextView) itemView.findViewById(R.id.tvOverview);
             tvTitle = (TextView) itemView.findViewById(R.id.tvTitle);
